@@ -17,24 +17,24 @@ public class Item {
     @Column(name="item_Name", nullable = false, length = 255)
     private String itemName;
 
-    @Column(name="item_Image", nullable = false, length = 255)
+    @Column(name="item_Image", nullable = true, length = 255)
     private String itemImage;
 
     @Column(name="item_Description", nullable = false, length = 255)
     private String itemDescription;
 
-    @Column(name="item_Quantity", nullable = false)
+    @Column(name="item_Quantity", nullable = true)
     private Integer itemQuantity;
 
-    @Column(name="item_per_price", nullable = false)
+    @Column(name="item_per_price", nullable = true)
     private Integer itemPerPrice;
 
     @ManyToOne
-    @JoinColumn(name = "brand_id", nullable = false)
+    @JoinColumn(name = "brand_id", nullable = true)
     private Brand brand;
 
     @ManyToOne
-    @JoinColumn(name = "category_id", nullable = false)
+    @JoinColumn(name = "category_id", nullable = true)
     private Category category;
 
 
