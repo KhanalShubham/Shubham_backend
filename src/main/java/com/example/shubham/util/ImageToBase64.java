@@ -8,7 +8,7 @@ import java.util.Base64;
 public class ImageToBase64 {
 
     public String getImageBase64(String fileName) {
-        String filePath = System.getProperty("user.dir") + "/lugahub/";
+        String filePath = System.getProperty("user.dir") + "/musichub";
         File file = new File(filePath + fileName);
         byte[] bytes = new byte[0];
         try {

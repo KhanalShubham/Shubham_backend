@@ -30,7 +30,7 @@ public class ItemServiceImpl implements ItemService {
     private final ItemRepository itemRepository;
     private final BrandRepository brandRepository;
     private final CategoryRepository categoryRepository;
-    private final String UPLOAD_DIRECTORY = new StringBuilder().append(System.getProperty("user.dir")).append("/lugahub/itemImage").toString();
+    private final String UPLOAD_DIRECTORY = new StringBuilder().append(System.getProperty("user.dir")).append("/musichub/itemImage").toString();
     ImageToBase64 imageToBase64 = new ImageToBase64();
     @Override
     public void saveItem(ItemPojo itemPojo) throws IOException {
